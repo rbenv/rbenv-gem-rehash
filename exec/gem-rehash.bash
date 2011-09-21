@@ -1,2 +1,6 @@
 #!/bin/sh
-export GEM_PATH="${RBENV_ROOT}/gems:${GEM_PATH}"
+
+cwd="$(pwd)"
+cd "${script%/*}/.."
+export GEM_PATH="$(pwd):${GEM_PATH}"
+cd "$cwd"
