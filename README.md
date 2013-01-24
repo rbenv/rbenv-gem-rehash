@@ -1,8 +1,7 @@
 # rbenv-gem-rehash
 
-**Never run `rbenv rehash` again.** rbenv-gem-rehash is an rbenv
-plugin that automatically runs `rbenv rehash` when you install or
-uninstall a gem.
+**Never run `rbenv rehash` again.** This rbenv plugin automatically
+runs `rbenv rehash` every time you install or uninstall a gem.
 
 ## Installation
 
@@ -38,6 +37,12 @@ override it. This can take a while—from a few hundred milliseconds on
 MRI to several seconds on JRuby—so the default path for the current
 Ruby version is cached to the filesystem the first time it is
 retrieved.
+
+## History
+
+**1.0.0** (January 24, 2013)
+
+* Initial public release.
 
 ## License
 
