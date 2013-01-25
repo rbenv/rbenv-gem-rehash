@@ -5,6 +5,8 @@ runs `rbenv rehash` every time you install or uninstall a gem.
 
 ## Installation
 
+Make sure you have rbenv 0.4.0 or later, then run:
+
     git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
 
 ## Usage
