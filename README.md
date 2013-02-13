@@ -25,20 +25,8 @@ gem executables are visible to rbenv.
 
 The rbenv plugin is responsible for making the RubyGems plugin visible
 to RubyGems. It hooks into the `rbenv exec` command that rbenv's shims
-use to invoke Ruby programs. By appending the RubyGems plugin's
-location to the `GEM_PATH` environment variable, the hook ensures the
-RubyGems plugin is loaded for every invocation of Ruby across all
-installed versions.
-
-## Caveats
-
-If the `GEM_PATH` environment variable is undefined, rbenv-gem-rehash
-must first execute the `gem env gempath` command to retrieve RubyGems'
-default path so that it can can *append* to the path rather than
-override it. This can take a while—from a few hundred milliseconds on
-MRI to several seconds on JRuby—so the default path for the current
-Ruby version is cached to the filesystem the first time it is
-retrieved.
+use to invoke Ruby programs and configures the environment so that
+RubyGems can discover the plugin.
 
 ## History
 
