@@ -7,7 +7,8 @@ runs `rbenv rehash` every time you install or uninstall a gem.
 
 Make sure you have rbenv 0.4.0 or later, then run:
 
-    git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
+    mkdir -p "${RBENV_ROOT:-$HOME/.rbenv}/plugins
+    git clone https://github.com/sstephenson/rbenv-gem-rehash.git "${RBENV_ROOT:-$HOME/.rbenv}/plugins/rbenv-gem-rehash"
 
 ## Usage
 
