@@ -9,6 +9,10 @@ Make sure you have rbenv 0.4.0 or later, then run:
 
     git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
 
+### Or on Mac OS X with Homebrew
+
+`brew install rbenv-gem-rehash`
+
 ## Usage
 
 1. `gem install` a gem that provides executables.
