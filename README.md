@@ -3,6 +3,8 @@
 **Never run `rbenv rehash` again.** This rbenv plugin automatically
 runs `rbenv rehash` every time you install or uninstall a gem.
 
+*Note*: This feature is now [built-in to rbenv](https://github.com/sstephenson/rbenv/pull/638).
+
 ## Installation
 
 Make sure you have rbenv 0.4.0 or later, then run:
