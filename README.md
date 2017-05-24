@@ -1,7 +1,9 @@
 # rbenv-gem-rehash
 
-**Never run `rbenv rehash` again.** This rbenv plugin automatically
+Never run `rbenv rehash` again. This rbenv plugin automatically
 runs `rbenv rehash` every time you install or uninstall a gem.
+
+**This plugin is deprecated** since its behavior is now included in rbenv core.
 
 ## Installation
 
